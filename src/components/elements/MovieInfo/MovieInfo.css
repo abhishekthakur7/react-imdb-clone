@@ -1,0 +1,120 @@
+.rmdb-movieinfo {
+  background-size: cover !important;
+  background-position: center !important;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  animation: animateMovieinfo 1s;
+}
+
+@keyframes animateMovieinfo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rmdb-movieinfo-content {
+  max-width: 1280px;
+  min-height: 450px;
+  margin: 0 auto;
+  background: rgb(0, 0, 0, 0.7);
+  border-radius: 20px;
+  position: relative;
+}
+
+.rmdb-movieinfo-thumb {
+  width: 300px;
+  float: left;
+}
+
+.rmdb-movieinfo-text {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.rmdb-movieinfo-text h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 48px;
+  margin: 0;
+}
+
+.rmdb-movieinfo-text h3 {
+  font-size: 16px;
+  line-height: 0;
+  margin-top: 30px;
+}
+
+.rmdb-movieinfo-text p {
+  font-family: 'Abel', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.rmdb-rating {
+  width: 190px;
+  height: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.rmdb-score {
+  position: absolute;
+  margin: 0;
+  right: 0px;
+  top: -3px;
+}
+
+.rmdb-director {
+  margin: 0;
+}
+
+.fa-film {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+}
+
+meter::-webkit-meter-bar {
+  background: #fff;
+  width: 150px;
+}
+meter::-webkit-meter-optimum-value {
+  background: linear-gradient(to bottom, #16d47b) !important;
+}
+meter::-webkit-meter-suboptimum-value {
+  background: linear-gradient(to bottom, #fbb450) !important;
+}
+meter::-webkit-meter-even-less-good-value {
+  background: linear-gradient(to bottom, #ee5f5b) !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .rmdb-movieinfo-text h1 {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rmdb-movieinfo {
+    min-height: 600px;
+    height: auto;
+  }
+
+  .rmdb-movieinfo-thumb {
+    width: 100% !important;
+  }
+
+  .fa-film {
+    display: none;
+  }
+
+  .rmdb-movieinfo-text h1 {
+    font-size: 32px;
+  }  
+}
